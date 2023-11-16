@@ -17,22 +17,6 @@ const Announcement = () => {
           {callToAction.icon && <callToAction.icon className="mr-1 -ml-1.5 h-5 w-5" />} {callToAction.text}
         </a>
       )}
-      {callToAction2 && callToAction2.text && callToAction2.href && (
-        <a
-          href={callToAction2.href}
-          target="_blank"
-          rel="noreferrer"
-          className="float-right"
-          title={callToAction2.text}
-        >
-          <img
-            src="https://img.shields.io/twitter/url/https/twitter.com/onwidget.svg?style=social&amp;label=Follow%20%40onWidget"
-            alt="Follow @onWidget"
-            width="125"
-            height="20"
-          />
-        </a>
-      )}
     </div>
   );
 };
