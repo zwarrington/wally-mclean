@@ -69,54 +69,16 @@ export const announcementData: AnnouncementProps = {
 export const headerData: HeaderProps = {
   links: [
     {
-      label: 'Pages',
-      icon: IconChevronDown,
-      links: [
-        {
-          label: 'About us',
-          href: '/about',
-        },
-        {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'Contact us',
-          href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-      ],
+      label: 'Home',
+      href: '/#home',
     },
     {
-      label: 'Blog',
-      href: '/blog',
-    },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
-  ],
-  actions: [
-    {
-      text: 'Download',
-      href: 'https://github.com/onwidget/tailnext',
-      targetBlank: true,
-      btnType: 'primary',
+      label: 'Bracket',
+      href: '/#bracket',
     },
   ],
   isSticky: true,
-  showToggleTheme: true,
+  showToggleTheme: false,
   showRssFeed: false,
   position: 'right',
 };
@@ -124,34 +86,33 @@ export const headerData: HeaderProps = {
 // Hero data
 export const heroData: HeroProps = {
   title: (
-    <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
-    </>
+    <div id="home">
+      <small>3rd Annual</small><br />Wally McLean<br /><small>Memorial Pool Tournament</small>
+    </div>
   ),
-  subtitle: (
-    <>
-      <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          TailNext
-        </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
-      </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
-    </>
-  ),
-  callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
-    targetBlank: true,
-    btnType: 'primary',
-  },
-  callToAction2: {
-    text: 'Learn more',
-    href: '/',
-  },
+  // subtitle: (
+  //   <>
+  //     <span className="hidden md:inline">
+  //       <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
+  //         TailNext
+  //       </span>{' '}
+  //       is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
+  //     </span>{' '}
+  //     It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
+  //     optimization.
+  //   </>
+  // ),
+  // callToAction: {
+  //   text: 'Get template',
+  //   href: 'https://github.com/onwidget/tailnext',
+  //   icon: IconDownload,
+  //   targetBlank: true,
+  //   btnType: 'primary',
+  // },
+  // callToAction2: {
+  //   text: 'Learn more',
+  //   href: '/',
+  // },
   image: {
     src: heroImg,
     alt: 'Hero TailNext',

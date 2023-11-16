@@ -32,8 +32,7 @@ export default function Page() {
   return (
     <>
       <Hero data={heroData} />
-      <SocialProof {...socialProofData} />
-      <Features3 {...featuresData} />
+      {/* <Features3 {...featuresData} />
       <Content {...contentData} />
       <Content {...content2Data} />
       <Steps />
@@ -42,7 +41,7 @@ export default function Page() {
       <Pricing {...pricingData} />
       <Team />
       <Contact />
-      <CallToAction2 {...callToActionData} />
+      <CallToAction2 {...callToActionData} /> */}
     </>
   );
 }

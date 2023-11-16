@@ -33,10 +33,12 @@ export default function RootLayout({ children }: LayoutProps) {
       </head>
       <body className="bg-white tracking-tight text-gray-900 antialiased dark:bg-slate-900 dark:text-slate-300">
         <Providers>
-          <Announcement />
           <Header />
           <main>{children}</main>
-          <Footer2 />
+          <br /><br />
+          <div id="bracket">
+            <iframe src="https://challonge.com/wally_mclean_memorial_2023/module?theme=8228&amp;multiplier=1&amp;match_width_multiplier=1&amp;show_final_results=1&amp;show_standings=0&amp;show_live_status=0&amp;subdomain=" allow="fullscreen" width="100%" height="1200" frameBorder="0" scrolling="auto" allow-transparency="true"></iframe>
+          </div>
         </Providers>
       </body>
     </html>
